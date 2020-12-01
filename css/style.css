@@ -325,11 +325,7 @@ form label,p{
 
 	border-radius: 10px 10px 0 0;
 }
-/*
-.act1, .act4{
-	width: 300px;
-}
-*/
+
 .act1, .act2, .act3, .act5, .act6{
 	border-radius: 10px 10px 10px 10px;
 	box-shadow: 2px 2px 5px;
