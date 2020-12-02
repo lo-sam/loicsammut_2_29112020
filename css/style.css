@@ -325,9 +325,16 @@ form label,p{
 	border-radius: 25px 25px 25px 25px ;
 	box-shadow: 5px 5px 5px;	
 	overflow: hidden;
-	margin-right: 25px;
 }
 
+#act1{
+	margin-right: 40px;
+}
+
+#act4{
+	margin-left: 10px;
+	margin-right: 40px;
+}
 #act1 img{
 	position: relative;
 	left: -201px;
@@ -358,7 +365,6 @@ form label,p{
 .second_act, .second_act2{
 	height: 450px;
 	width: 300px;
-	margin-right: 25px;
 }
 
 #act2, #act3, #act5, #act6{
@@ -367,7 +373,6 @@ form label,p{
 	border-radius: 25px 25px 25px 25px ;
 	box-shadow: 5px 5px 5px;	
 	overflow: hidden;
-	margin-right: 25px;
 }
 
 
