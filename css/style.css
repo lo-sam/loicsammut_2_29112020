@@ -310,63 +310,137 @@ form label,p{
 	margin-bottom: 25px;
 }
 
-#act_table article{
-	flex: 1;
-	justify-content: space-between;
-}
-
-.act1 a, .act4 a, .second_act a, .second_act2 a{
-}
-
-.act1 img, .act4 img{
-	height: 390px;
-	/*height: auto;*/
-	width: 300px;
-
-	border-radius: 10px 10px 0 0;
-}
-
-.act1, .act2, .act3, .act5, .act6{
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 2px 2px 5px;
-}
-.act4{
-	margin-left: 20px;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 2px 2px 5px;
-}
-
-.second_act{
-	margin-right: 20px;
-}
-
-.second_act img, .second_act2 img{
-	width: 300px;
-	height: auto;
-	border-radius: 10px 10px 0 0;
-}
-
 #act_table, #act_table article{
 	display: flex;
 	margin-top: 25px;
 }
 
+#act_table article{
+	flex: 1;
+}
+
+#act1, #act4{
+	height: 450px;
+	width: 300px;
+	border-radius: 25px 25px 25px 25px ;
+	box-shadow: 5px 5px 5px;	
+	overflow: hidden;
+	margin-right: 25px;
+}
+
+#act1 img{
+	position: relative;
+	left: -201px;
+	right: -201px;
+	top: -73px;
+	border-radius: 25px 25px 0 0;
+}
+
+#act1 h5{
+	position: relative;
+	left: 20px;
+	top: -57px;
+}
+
+#act4 img{
+	position: relative;
+	left: -153px;
+	right: -153px;
+	top: -7px;
+}
+
+#act4 h5{
+	position: relative;
+	left: 20px;
+	top: 5px;
+}
+
+.second_act, .second_act2{
+	height: 450px;
+	width: 300px;
+	margin-right: 25px;
+}
+
 #act2, #act3, #act5, #act6{
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 2px 2px 5px;
+	height: 215px;
+	width: 300px;
+	border-radius: 25px 25px 25px 25px ;
+	box-shadow: 5px 5px 5px;	
+	overflow: hidden;
+	margin-right: 25px;
 }
 
 
+#act2, #act5{
+	margin-bottom: 20px;
+}
+
+#act2_title, #act5_title{
+	position: relative;
+	height: 55px;
+	width: 300px;
+	border-radius: 0 0 25px 25px;
+	background-color: #FFF;
+}
+
+#act2_title h5{
+	padding-left: 20px;
+	padding-top: 15px;
+}
+
+#act2 img{
+	position: relative;
+	margin: -170px 0 -200px 0;
+}
+
+#act3 img{
+	position: relative;
+	margin: -115px 0 0 -225px
+}
+
+#act3_title, #act6_title{
+	position: relative;
+	height: 55px;
+	width: 300px;
+	border-radius: 0 0 25px 25px;
+	background-color: #FFF;
+	top: -160px;
+}
+
+#act3_title h5{
+	padding-left: 20px;
+	padding-top: 15px;
+}
+
+#act5 img{
+	position: relative;
+	margin: -45px 0 -180px -200px;
+}
+
+#act5_title h5{
+	padding-left: 20px;
+	padding-top: 15px;
+}
+
+#act6 img{
+	position: relative;
+	margin: -105px 0 45px -100px;
+}
+
+#act6_title h5{
+	padding-left: 20px;
+	padding-top: 15px;
+}
 /** PIED DE PAGE **/
 
 footer{
 	background-color: #F2F2F2;
 	height: 200px;
+	width: 100%
 }
 
 footer .wrapper{
 	display: flex;
-	/*padding: 15px;*/
 	justify-content: flex-start;
 }
 
