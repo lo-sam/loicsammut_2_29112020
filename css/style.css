@@ -626,6 +626,14 @@ footer .wrapper{
 		border-radius: 0 0 0 0;
 	}
 
+	#populaire h5{
+		font-size: 1em;
+	}
+
+	#populaire p{
+		left: 145px;
+	}
+	
 	#result_search{
 		flex: 1;
 		width: auto;
@@ -634,7 +642,7 @@ footer .wrapper{
 	#result_search img{
 		width: 315px;
 	}
-	
+
 	#first_line, #sec_line{
 		display: block;
 
@@ -697,8 +705,8 @@ footer .wrapper{
 		padding: 20px;
 	}
 
-	#propos{
-		margin: 0;
+	#propos, #nos_heberg, #assist{
+		margin: 0px 0 20px 20px;
 	}
 
 
