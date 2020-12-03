@@ -19,16 +19,21 @@
 
 	<header>
 		<div id="entete">
-			<a href="index.html">
-				<img src="img/Reservia.svg" alt="logo du site">
-			</a>
-			<nav>
-				<ul>
-					<li class="cat"><a href="#hebergement">Hébergements</a></li>
-					<li class="cat"><a href="#activite">Activités</a></li>
-					<li id="sub"><a href="#">S'inscrire</a></li>
-				</ul>
-			</nav>
+			<div id="logo">
+				<a href="index.html">
+					<img src="img/Reservia.svg" alt="logo du site">
+				</a>
+			</div>
+			<div id="barre_nav">
+				<nav>
+					<ul>
+						<li class="cat"><a href="#hebergement">Hébergements</a></li>
+						<li class="cat"><a href="#activite">Activités</a></li>
+					<!--	<li id="sub"></li> -->
+					</ul>
+				</nav>
+			</div>
+			<div id="sub"><a href="#">S'inscrire</a></div>
 		</div>
 		<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 		<p>En plein centre ville ou en pleine nature</p>
@@ -42,7 +47,10 @@
 			<label for="ville"><i class="fas fa-map-marker-alt"></i></label>
 			<p>
 				<input type="search" name="ville" value="Marseille, France" id="ville">
-                <input id="btn_search" type="submit" value="Rechercher">
+   			</p>
+   			<p>
+   				<input id="btn_search" type="submit" value="Rechercher">
+                <input id="btnphone_search" type="image" src="img/search-solid.png">
 			</p>
 		</form>
 		<div id="filter">
@@ -50,6 +58,8 @@
 			<ul>
 				<li><i class="fas fa-money-bill-wave"></i><p class="text_search">Economique</p></li>
 				<li><i class="fas fa-child"></i><p class="text_search">Familial</p></li>
+			</ul>
+			<ul>
 				<li><i class="fas fa-heart"></i><p class="text_search">Romantique</p></li>
 				<li><i class="fas fa-dog"></i><p class="text_search">Animaux autorisés</p></li>
 			</ul>
@@ -211,7 +221,7 @@
 				<div id="act1">
 					<a href="#">
 						<img src="img/Activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-						<h5>Vieux Port</h5>
+						<div id="act1_title"><h5>Vieux Port</h5></div>
 					</a>
 				</div>
 
@@ -236,7 +246,7 @@
 				<div id="act4">
 					<a href="#">
 						<img src="img/Activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-						<h5>Parc National des Calanques</h5>
+						<div id="act4_title"><h5>Parc National des Calanques</h5></div>
 					</a>
 				</div>
 

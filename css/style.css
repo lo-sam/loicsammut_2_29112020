@@ -50,29 +50,39 @@ h1, h2, h3, h5{
 	margin-bottom: 20px;
 }
 
+#logo{
+	width: 50%;
+}
+
 #entete img{
 	display: flex;
 	float: left;
 	width: 96px;
 }
 
-#entete nav{
-	width: 30%;
-	margin-left: auto;
-	margin-top: auto;
+#barre_nav{
+	width: 40%;
+	margin-top: 20px;
 }
 
-#entete ul{
+#barre_nav ul{
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-end;
 }
 
-#entete li a:hover{
+#barre_nav li{
+	margin-right: 30px;
+}
+
+#barre_nav li a:hover{
 	color: #0065FC;
 	border-top: solid #0065FC 1px;
-	padding-top: 50px;
+	padding-top: 40px;
 }
 
+#sub{
+	margin-top: 20px;
+}
 
 #sub a{
 	color: #0065FC;
@@ -94,13 +104,13 @@ header p{
 #recherche form{
 	display: flex;
 	height: 52px;
-	border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 0 0 15px;
 	background-color: #F2F2F2;
 	width: fit-content;
 	margin-bottom: 30px;
 }
 
-form label,p{
+#recherche form label,p{
 	margin-bottom: auto;
     margin-top: auto;
 }
@@ -114,12 +124,15 @@ form label,p{
 
 #ville{
 	height: 48px;
-	width: 235px;
 	border: #F2F2F2;
 	text-align: center;
 	font-size: 1.2em;
 	font-weight: bold;
 	vertical-align: middle;
+}
+
+#btnphone_search{
+	display: none;
 }
 
 #btn_search{
@@ -137,7 +150,6 @@ form label,p{
 	font-weight: bold;
 	margin-top: auto;
 	margin-bottom: auto;
-	position: relative;
 }
 
 #filter ul{
@@ -156,6 +168,7 @@ form label,p{
 #filter i{
 	padding: 21px;
 	background-color: #DEEBFF;
+	color: #0065FC;
 	text-align: center;
 	border-radius: 50px 50px 50px 50px ;
 	margin-left: 15px;
@@ -238,7 +251,7 @@ form label,p{
 	padding: 5px;
 }
 
-.add h5, p, span{
+.add h5, .add p, .add span{
 	padding-left: 10px;
 	padding-bottom: 10px;
 }
@@ -327,6 +340,16 @@ form label,p{
 	overflow: hidden;
 }
 
+#act1_title, #act4_title{
+	position: relative;
+	height: 55px;
+	width: 300px;
+	border-radius: 0 0 25px 25px;
+	background-color: #FFF;
+    top: -55px;
+    left: 20px;
+}
+
 #act1{
 	margin-right: 40px;
 }
@@ -343,23 +366,11 @@ form label,p{
 	border-radius: 25px 25px 0 0;
 }
 
-#act1 h5{
-	position: relative;
-	left: 20px;
-	top: -57px;
-}
-
 #act4 img{
 	position: relative;
 	left: -153px;
 	right: -153px;
 	top: -7px;
-}
-
-#act4 h5{
-	position: relative;
-	left: 20px;
-	top: 5px;
 }
 
 .second_act, .second_act2{
@@ -436,6 +447,8 @@ form label,p{
 	padding-left: 20px;
 	padding-top: 15px;
 }
+
+
 /** PIED DE PAGE **/
 
 footer{
@@ -460,4 +473,245 @@ footer .wrapper{
 
 #propos li, #nos_heberg li, #assist li{
 	margin-bottom: 20px;
+}
+
+
+
+/** FORMAT TABLETTE **/
+
+@media (max-width: 768px)
+{
+    
+}
+
+
+/** FORMAT MOBILE **/
+
+@media (max-width: 375px)
+{
+
+	body{
+		width: 100%;
+		padding: 0;
+	}
+
+	.wrapper{
+		width: 100%;
+	}
+
+	h1{
+		font-size: 1.6em;
+		padding: 0 20px;
+	}
+
+
+	/** ENTETE DE PAGE **/
+
+
+	#entete{
+	    display: flex;
+	    padding-top: 20px;
+	    flex-direction: column;
+	    margin-bottom: 20px;
+	}
+
+	#logo{
+		width: 50%;
+	    margin-bottom: 20px;
+	    margin-left: 20px;
+	}
+
+	#entete img{
+		display: flex;
+		float: left;
+		width: 100px;
+	}
+	 
+
+	#barre_nav, #sub{
+	    font-size: 1.2em;
+	}
+
+	#barre_nav li{
+	    border-bottom: 1px solid #F2F2F2;
+	    padding: 10px;
+	    margin: 0;
+	    width: 50%;
+	    text-align: center;
+	}
+
+	#barre_nav li:active{
+	    border-bottom: 1px solid #0065FC;
+	    color: #0065FC;
+	    border-top: none;
+	}
+
+	#entete li a:hover{
+		border-top: none;
+	}
+
+	#barre_nav{
+		width: 100%;
+	}
+
+	#sub{
+	    position: relative;
+	    left: 265px;
+	    top: -105px;
+	    text-decoration: none;
+	    border: none;
+	    margin: 0;
+	}
+
+	header p{
+		padding: 0 20px;
+	}
+
+
+	/** RECHERCHE **/
+
+	#recherche{
+		padding: 0 20px;
+	}
+
+	#recherche form p{
+		padding: 0;
+	}
+
+	#ville{
+		width: 230px;
+	}
+
+	#btn_search{
+		display: none;
+	}
+
+	#btnphone_search{
+	    width: 20px;
+	    display: inline;
+	    position: relative;
+	    background-color: #0065FC;
+	    padding: 16px;
+	    border-radius: 0 15px 15px 0;
+	}
+
+	#filter{
+		display: block;
+	}
+
+	#filter ul:last-child{
+		display: block;
+	}
+
+	#filter li{
+		margin-top: 15px;
+		width: fit-content;
+	}
+
+	#filter .text_search, #filter li i{
+		margin-left: 0;
+	}
+
+
+	/** RESULTAT **/
+
+	#hebergement{
+		flex-direction: column-reverse;
+	}
+
+	#populaire{
+		flex: 1;
+		width: auto;
+		margin: 0;
+		border-radius: 0 0 0 0;
+	}
+
+	#result_search{
+		flex: 1;
+		width: auto;
+	}
+
+	#result_search img{
+		width: 315px;
+	}
+	
+	#first_line, #sec_line{
+		display: block;
+
+	}
+
+
+	/** ACTIVITES **/
+
+	#activite{
+		padding: 45px 40px 34px 35px;
+	}
+
+	#act_table, #act_table article {
+	    margin-top: : 25px;
+	    display: block;
+	}
+
+	#act4, #act5, #act6{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#act1, #act4{
+		margin-bottom: 20px;
+	    height: 190px;
+	}
+
+	#act1_title{
+		top: -330px;
+		left: 0;
+	}
+
+	#act4_title{
+		top: -270px;
+		left: 0;
+	}
+
+	#act1 img{
+		top: -170px;
+	}
+
+	#act4 img {
+	    top: -182px;
+	}
+
+	#act1_title h5, #act4_title h5{
+		padding-top: 15px;
+	    padding-left: 20px;
+	}
+
+
+	/** PIED DE PAGE **/
+
+	footer{
+		height: auto;
+	}
+
+	footer .wrapper{
+		display: block;
+		padding: 20px;
+	}
+
+	#propos{
+		margin: 0;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
