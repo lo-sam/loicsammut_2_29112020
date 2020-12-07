@@ -462,6 +462,165 @@ footer .wrapper{
 @media (max-width: 768px)
 {
     
+
+	/** GLOBAL **/ 
+
+	body{
+		width: 100%;
+		padding: 0;
+	}
+
+	.wrapper{
+		width: 100%;
+	}
+
+
+	/** ENTETE DE PAGE **/
+
+	header{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#entete img{
+		width: 150px;
+	}
+
+	#barre_nav{
+		margin-top: 40px;
+	}
+
+	#sub {
+    margin-top: 40px;
+	}
+
+	#barre_nav li a:hover{
+		padding-top: 55px;
+	}
+
+	/** RECHERCHE **/
+
+	#recherche form{
+		margin-left: auto;
+	    margin-right: auto;
+	}
+
+	#filter{
+		flex-direction: column;
+	}
+
+	#filter p{
+		margin-bottom: 10px;
+	}
+
+	#filter p:first-child{
+		margin-left: 20px;
+	}
+
+	#filter ul{
+		margin-left: 160px;
+	}
+
+	#information i{
+		margin-left: 20px;
+	    margin-right: 5px;
+	}
+
+
+	/** RESULTAT **/
+
+	#result_search{
+		width: auto;
+		margin-bottom: 20px;
+		border-radius: 20px 20px 20px 20px;
+	}
+
+
+	/** HEBERGEMENTS **/
+
+	#hebergement{
+		flex-direction: column;
+	}
+
+	#first_line, #sec_line{
+		flex-direction: column;
+		width: max-content;
+		display: inline-block;
+	}
+
+	#result_search img{
+		width: 330px;
+	}
+
+	#more{
+		position: relative;
+    	top: 10px;
+	}
+
+	/** POPULAIRE **/
+
+	#populaire{
+		width: auto;
+	    margin: 0;
+	    padding: 20px;
+	}
+
+	#populaire img{
+		width: 180px;
+	}
+
+	#populaire h5, #populaire p, #populaire span{
+		left: 200px;
+	}
+
+	#populaire ul{
+		width: 500px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+
+	/** ACTIVITES **/
+
+	#activite h2{
+		padding-left: 20px;
+	}
+
+	#act_table{
+		flex-direction: column;
+	}
+
+	#act_table, #act_table article {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/** FOOTER **/
+
+	footer{
+		height: 350px;
+	}
+
+	footer .wrapper{
+		justify-content: space-around;
+	}
+
+	#propos, #nos_heberg, #assist{
+		margin-right: 0;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -487,6 +646,9 @@ footer .wrapper{
 
 	/** ENTETE DE PAGE **/
 
+	header{
+		padding: 0;
+	}
 
 	#entete{
 	    display: flex;
@@ -537,7 +699,7 @@ footer .wrapper{
 	#sub{
 	    position: relative;
 	    left: 265px;
-	    top: -105px;
+	    top: -130px;
 	    text-decoration: none;
 	    border: none;
 	    margin: 0;
@@ -584,6 +746,14 @@ footer .wrapper{
 		display: block;
 	}
 
+	#filter p:first-child {
+    	margin-left: 0;
+	}
+
+	#filter ul{
+		margin-left: 0;
+	}
+
 	#filter ul:last-child{
 		display: block;
 	}
@@ -597,6 +767,9 @@ footer .wrapper{
 		margin-left: 0;
 	}
 
+	#information i{
+		margin-left: 0;
+	}
 
 	/** RESULTAT **/
 
@@ -610,6 +783,14 @@ footer .wrapper{
 		margin: 0;
 		border-radius: 0 0 0 0;
 		padding: 0;
+	}
+
+	#populaire h5, #populaire p, #populaire span{
+		left: 145px;
+	}
+
+	#populaire img {
+    	width: 127px;
 	}
 
 	#populaire h2{
@@ -642,7 +823,7 @@ footer .wrapper{
 
 	#first_line, #sec_line{
 		flex-direction: column;
-	    width: 300px;
+	    width: auto;
 	    margin-left: auto;
 	    margin-right: auto;
 	}
