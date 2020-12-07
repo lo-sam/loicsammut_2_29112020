@@ -158,12 +158,10 @@ header p{
 	margin-bottom: auto;
 }
 
-
 #filter p{
 	padding-left: 10px;
 	margin-right: 15px;
 }
-
 
 #filter i{
 	padding: 21px;
@@ -174,7 +172,26 @@ header p{
 	margin-left: 15px;
 	position: absolute;
 }
- 
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px); }
+  10% { transform: translate(-1px, -2px); }
+  20% { transform: translate(-3px, 0px); }
+  30% { transform: translate(3px, 2px); }
+  40% { transform: translate(1px, -1px); }
+  50% { transform: translate(-1px, 2px); }
+  60% { transform: translate(-3px, 1px); }
+  70% { transform: translate(3px, 1px); }
+  80% { transform: translate(-1px, -1px); }
+  90% { transform: translate(1px, 2px); }
+  100% { transform: translate(1px, -2px); }
+} 
+
+#filter li:hover {
+  animation: shake 1.5s;
+  animation-iteration-count: infinite;
+}
+
 #filter .text_search{
 	margin-left: 15px;
 	border: 1px solid #F2F2F2;
@@ -243,6 +260,8 @@ header p{
 	border-radius: 10px 10px  0 0;
 	width: 236px;
 	height: 114px;
+	object-fit: cover;
+	object-position: center;
 }
 
 .add{
@@ -256,6 +275,7 @@ header p{
 	padding-bottom: 10px;
 }
 
+/** POPULAIRES **/
 
 #populaire{
 	flex: 1.5;
@@ -286,6 +306,8 @@ header p{
 #populaire img{
 	width: 127px;
 	height: 134px;
+	object-fit: cover;
+	object-position: center;
 	padding: 5px;
 	vertical-align: middle;
 	border-radius: 10px 0 0 10px;
@@ -301,7 +323,7 @@ header p{
 #populaire p{
 	position: absolute;
 	top: 60px;
-	left: 138px;
+	left: 148px;
 }
 
 #populaire span{
@@ -332,22 +354,24 @@ header p{
 	flex: 1;
 }
 
-#act1, #act4{
-	height: 450px;
+#activite img{
 	width: 300px;
-	border-radius: 25px 25px 25px 25px ;
-	box-shadow: 5px 5px 5px;	
-	overflow: hidden;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 25px 25px 0 0;
 }
 
-#act1_title, #act4_title{
-	position: relative;
-	height: 55px;
-	width: 300px;
-	border-radius: 0 0 25px 25px;
-	background-color: #FFF;
-    top: -55px;
-    left: 20px;
+#act1, #act2, #act3, #act4, #act5, #act6{
+	border-radius: 25px 25px 25px 25px ;
+	box-shadow: 5px 5px 20px #F2F2F2;	
+}
+
+#act1 ,#act4{
+	height: 450px;
+}
+
+#act1 img, #act4 img{
+	height: 390px;
 }
 
 #act1{
@@ -358,94 +382,50 @@ header p{
 	margin-left: 10px;
 	margin-right: 40px;
 }
-#act1 img{
-	position: relative;
-	left: -201px;
-	right: -201px;
-	top: -73px;
-	border-radius: 25px 25px 0 0;
-}
-
-#act4 img{
-	position: relative;
-	left: -153px;
-	right: -153px;
-	top: -7px;
-}
 
 .second_act, .second_act2{
 	height: 450px;
 	width: 300px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#act2, #act3, #act5, #act6{
-	height: 215px;
-	width: 300px;
-	border-radius: 25px 25px 25px 25px ;
-	box-shadow: 5px 5px 5px;	
-	overflow: hidden;
-}
-
-
-#act2, #act5{
-	margin-bottom: 20px;
-}
-
-#act2_title, #act5_title{
-	position: relative;
-	height: 55px;
-	width: 300px;
-	border-radius: 0 0 25px 25px;
-	background-color: #FFF;
-}
-
-#act2_title h5{
-	padding-left: 20px;
-	padding-top: 15px;
+#act2{
+	height: 240px;
 }
 
 #act2 img{
-	position: relative;
-	margin: -170px 0 -200px 0;
+	height: 180px;
+}
+
+#act3{
+	height: 165px;
 }
 
 #act3 img{
-	position: relative;
-	margin: -115px 0 0 -225px
+	height: 110px;
 }
 
-#act3_title, #act6_title{
-	position: relative;
-	height: 55px;
-	width: 300px;
-	border-radius: 0 0 25px 25px;
-	background-color: #FFF;
-	top: -160px;
-}
-
-#act3_title h5{
-	padding-left: 20px;
-	padding-top: 15px;
+#act5{
+	height: 195px;
 }
 
 #act5 img{
-	position: relative;
-	margin: -45px 0 -180px -200px;
+height: 140px;
 }
 
-#act5_title h5{
-	padding-left: 20px;
-	padding-top: 15px;
+#act6{
+	height: 210px;
 }
 
 #act6 img{
-	position: relative;
-	margin: -105px 0 45px -100px;
+	height: 150px;
 }
 
-#act6_title h5{
+#activite h5{
+	padding-top: 20px;
 	padding-left: 20px;
-	padding-top: 15px;
 }
 
 
@@ -570,6 +550,10 @@ footer .wrapper{
 
 	/** RECHERCHE **/
 
+	#result_search{
+	width: 100%;
+	}
+
 	#recherche{
 		padding: 0 20px;
 	}
@@ -633,7 +617,7 @@ footer .wrapper{
 	#populaire p{
 		left: 145px;
 	}
-	
+
 	#result_search{
 		flex: 1;
 		width: auto;
