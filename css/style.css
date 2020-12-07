@@ -104,9 +104,9 @@ header p{
 #recherche form{
 	display: flex;
 	height: 52px;
-	border-radius: 15px 0 0 15px;
+	border-radius: 15px 15px 15px 15px;
 	background-color: #F2F2F2;
-	width: fit-content;
+	width: max-content;
 	margin-bottom: 30px;
 }
 
@@ -639,42 +639,24 @@ footer .wrapper{
 		padding: 45px 40px 34px 35px;
 	}
 
+	#activite h2{
+		margin-bottom: : : 25px;
+
+	}
+
 	#act_table, #act_table article {
-	    margin-top: : 25px;
 	    display: block;
 	}
 
-	#act4, #act5, #act6{
+	#act_table article{
+		margin-top: 0;
+	}
+
+	#act1, #act2, #act3, #act4, #act5, #act6{
 		margin-left: 0;
 		margin-right: 0;
-	}
-
-	#act1, #act4{
+		margin-top: 0;
 		margin-bottom: 20px;
-	    height: 190px;
-	}
-
-	#act1_title{
-		top: -330px;
-		left: 0;
-	}
-
-	#act4_title{
-		top: -270px;
-		left: 0;
-	}
-
-	#act1 img{
-		top: -170px;
-	}
-
-	#act4 img {
-	    top: -182px;
-	}
-
-	#act1_title h5, #act4_title h5{
-		padding-top: 15px;
-	    padding-left: 20px;
 	}
 
 
