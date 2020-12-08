@@ -189,7 +189,7 @@ header p{
 
 #filter li:hover {
   animation: shake 1.5s;
-  animation-iteration-count: infinite;
+  /*animation-iteration-count: infinite;*/
 }
 
 #filter .text_search{
@@ -494,7 +494,7 @@ footer .wrapper{
     margin-top: 40px;
 	}
 
-	#barre_nav li a:hover{
+	#barre_nav li a:active{
 		padding-top: 55px;
 	}
 
@@ -609,18 +609,6 @@ footer .wrapper{
 		margin-right: 0;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -698,6 +686,7 @@ footer .wrapper{
 
 	#sub{
 	    position: relative;
+	    width: max-content;
 	    left: 265px;
 	    top: -130px;
 	    text-decoration: none;
@@ -711,11 +700,6 @@ footer .wrapper{
 
 
 	/** RECHERCHE **/
-
-	#result_search{
-	width: 100%;
-	border-radius: 0 0 10px 10px;
-	}
 
 	#recherche{
 		padding: 0 20px;
@@ -760,7 +744,7 @@ footer .wrapper{
 
 	#filter li{
 		margin-top: 15px;
-		width: fit-content;
+		width: max-content;
 	}
 
 	#filter .text_search, #filter li i{
@@ -814,11 +798,13 @@ footer .wrapper{
 
 	#result_search{
 		flex: 1;
+		border-radius: 0 0 10px 10px;
 		width: auto;
 	}
 
 	#result_search img{
-		width: 100%;
+		/*width: 100%;*/
+		padding: 5px;
 	}
 
 	#first_line, #sec_line{
@@ -831,6 +817,7 @@ footer .wrapper{
 	#first_line div, #sec_line div{
 		margin-left: 0;
 		margin-right: 0;
+		padding: 0;
 	}
 
 	/** ACTIVITES **/
@@ -869,25 +856,11 @@ footer .wrapper{
 	}
 
 	footer .wrapper{
-		display: block;
-		padding: 20px;
+		flex-direction: column;
 	}
 
 	#propos, #nos_heberg, #assist{
-		margin: 0px 0 20px 20px;
+		margin: 20px 0 20px 20px;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
