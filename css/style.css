@@ -578,11 +578,11 @@ footer .wrapper{
 	}
 
 	#populaire img{
-		width: 180px;
+		width: 50%;
 	}
 
 	#populaire h5, #populaire p, #populaire .star{
-		left: 200px;
+		left: 390px;
 	}
 
 	#populaire ul{
@@ -629,7 +629,7 @@ footer .wrapper{
 
 /** FORMAT MOBILE **/
 
-@media (max-width: 376px)
+@media (max-width: 375px)
 {
 
 	h1{
