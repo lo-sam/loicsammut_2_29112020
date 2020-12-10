@@ -469,7 +469,6 @@ footer .wrapper{
 	/** GLOBAL **/ 
 
 	body{
-		width: 100%;
 		padding: 0;
 	}
 
@@ -518,6 +517,7 @@ footer .wrapper{
 
 	#filter p:first-child{
 		margin-left: 20px;
+		padding-left: 0;
 	}
 
 	#filter ul{
@@ -553,11 +553,11 @@ footer .wrapper{
 
 	#first_line{
 		float: left;
-		width: 48%;
+		width: 50%;
 	}
 
 	#sec_line{
-		width: 48%;
+		width: 50%;
 	}
 
 	#result_search img{
@@ -586,7 +586,6 @@ footer .wrapper{
 	}
 
 	#populaire ul{
-		width: auto;
 	    margin-left: auto;
 	    margin-right: auto;
 	}
@@ -603,6 +602,7 @@ footer .wrapper{
 	}
 
 	#act_table, #act_table article {
+		margin-top: 15px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -621,6 +621,9 @@ footer .wrapper{
 		margin-right: 0;
 	}
 
+	#propos li, #nos_heberg li, #assist li{
+		margin-bottom: 10px;
+	}
 }
 
 
@@ -628,15 +631,6 @@ footer .wrapper{
 
 @media (max-width: 375px)
 {
-
-	body{
-		width: 100%;
-		padding: 0;
-	}
-
-	.wrapper{
-		width: 100%;
-	}
 
 	h1{
 		font-size: 1.5em;
@@ -651,21 +645,15 @@ footer .wrapper{
 	}
 
 	#entete{
-	    display: flex;
-	    padding-top: 20px;
 	    flex-direction: column;
-	    margin-bottom: 20px;
 	}
 
 	#logo{
-		width: 50%;
 	    margin-bottom: 20px;
 	    margin-left: 20px;
 	}
 
 	#entete img{
-		display: flex;
-		float: left;
 		width: 100px;
 	}
 	 
@@ -701,8 +689,6 @@ footer .wrapper{
 	    width: max-content;
 	    left: 265px;
 	    top: -130px;
-	    text-decoration: none;
-	    border: none;
 	    margin: 0;
 	}
 
@@ -730,9 +716,8 @@ footer .wrapper{
 	}
 
 	#btnphone_search{
-	    width: 20px;
+	    width: 18px;
 	    display: inline;
-	    position: relative;
 	    background-color: #0065FC;
 	    padding: 16px;
 	    border-radius: 15px;
@@ -743,7 +728,7 @@ footer .wrapper{
 	}
 
 	#filter p:first-child {
-    	margin-left: 0;
+    	margin: 0;
 	}
 
 	#filter ul{
@@ -761,6 +746,7 @@ footer .wrapper{
 
 	#filter .text_search, #filter li i{
 		margin-left: 0;
+		margin-right: 5px;
 	}
 
 	#information i{
