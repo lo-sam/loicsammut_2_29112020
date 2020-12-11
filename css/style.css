@@ -3,12 +3,12 @@
 body{
 	margin: auto;
 	padding: 5px;
-	text-align: justify;
+	/*text-align: justify;*/
 	font-family: 'Open Sans', sans-serif;
 }
 
 .wrapper{
-	width: 1340px;
+	max-width: 1340px;
 	margin-left: auto;
     margin-right: auto;
 }
@@ -57,7 +57,7 @@ h1, h2, h3, h5{
 #entete img{
 	display: flex;
 	float: left;
-	width: 96px;
+	width: 15%;
 }
 
 #barre_nav{
@@ -116,7 +116,7 @@ header p{
 }
 
 #recherche form label{
-	width: 50px;
+	padding: 0 20px;
 	text-align: center;
 	font-size: 1.2em;
 }
@@ -137,12 +137,12 @@ header p{
 }
 
 #btn_search{
-	width: 135px;
+	padding: 0 12px;
 	height: 50px;
 	background-color: #0065FC;
 	color: #FFF;
 	border: none;
-	border-radius: 0 10px 10px 0;
+	border-radius: 0 15px 15px 0;
 	font-size: 1.2em;
 }
 
@@ -165,7 +165,7 @@ header p{
 }
 
 #filter i{
-	padding: 21px;
+	padding: 15px;
 	background-color: #DEEBFF;
 	color: #0065FC;
 	text-align: center;
@@ -193,10 +193,12 @@ header p{
 }
 
 #filter .text_search{
-	margin-left: 15px;
-	border: 1px solid #F2F2F2;
-	border-radius: 50px;
-	padding: 20px 10px 20px 70px;
+	height: 5px;
+    margin-left: 15px;
+    border: 1px solid #F2F2F2;
+    border-radius: 50px;
+    padding: 15px 10px 25px 55px;
+
 }
 
 #information{
@@ -207,10 +209,9 @@ header p{
 #information i{
     border: 1px #f2f2f2 solid;
     border-radius: 25px;
-    width: 16px;
     text-align: center;
     float: left;
-    padding: 5px;
+    padding: 5px 10px;
     color: #0065FC;
 }
 
@@ -245,11 +246,10 @@ header p{
 }
 
 #result_search{
-	flex: 3;
+	flex: 4;
     background-color: #f2f2f2;
     padding: 45px 10px;
     border-radius: 20px;
-    width: 880px;
 }
 
 #first_line, #sec_line{
@@ -264,10 +264,14 @@ header p{
 #result_search img{
 	margin-bottom: 10px;
 	border-radius: 10px 10px  0 0;
-	width: 236px;
+	width: 100%;
 	height: 114px;
 	object-fit: cover;
 	object-position: center;
+}
+
+#result_search a{
+	width: 100%;
 }
 
 .add{
@@ -285,7 +289,6 @@ header p{
 
 #populaire{
 	flex: 1.5;
-    width: 420px;
     position: relative;
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -308,14 +311,14 @@ header p{
 
 .popu{
 	position: relative;
-	margin-top: 16px;
+	margin-top: 55px;
 	margin-bottom: 16px;
 	background-color: #FFF;
 	border-radius: 10px;
 }
 
 #populaire img{
-	width: 127px;
+	width: 35%;
 	height: 134px;
 	object-fit: cover;
 	object-position: center;
@@ -324,24 +327,23 @@ header p{
 	border-radius: 10px 0 0 10px;
 }
 
-#populaire h5{
+#populaire p, #populaire h5, #populaire .star{
 	position: absolute;
-	top: 14px;
-	left: 148px;
+	left: 40%;
+}
+
+#populaire h5{
+	top: 10%;
 	padding-right: 5px;
 	text-align: start;
 }
 
 #populaire p{
-	position: absolute;
 	top: 60px;
-	left: 148px;
 }
 
 #populaire .star{
-	position: absolute;
 	top: 114px;
-	left: 148px;
 }
 
 #more{
@@ -366,8 +368,12 @@ header p{
 	flex: 1;
 }
 
+#activite article:first-child{
+	margin-right: 30px;
+}
+
 #activite img{
-	width: 300px;
+	width: 100%;
 	object-fit: cover;
 	object-position: center;
 	border-radius: 25px 25px 0 0;
@@ -380,24 +386,16 @@ header p{
 
 #act1 ,#act4{
 	height: 450px;
+	width: 90%
 }
 
 #act1 img, #act4 img{
 	height: 390px;
 }
 
-#act1{
-	margin-right: 40px;
-}
-
-#act4{
-	margin-left: 10px;
-	margin-right: 40px;
-}
-
 .second_act, .second_act2{
 	height: 450px;
-	width: 300px;
+	width: 90%;
 	display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -412,7 +410,7 @@ header p{
 }
 
 #act3{
-	height: 165px;
+	height: 170px;
 }
 
 #act3 img{
@@ -449,13 +447,13 @@ footer{
 	width: 100%
 }
 
-footer .wrapper{
-	display: flex;
-	justify-content: flex-start;
+footer .wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0;
 }
 
 #propos , #nos_heberg , #assist{
-	margin-right: 250px;
 	margin-top: 50px;
 }
 
@@ -468,10 +466,40 @@ footer .wrapper{
 }
 
 
+/** B-P 1195px **/
+
+@media (max-width: 1195px)
+{
+
+	/** POPULAIRES **/
+
+	#populaire .popu__para2{
+		top: 75px;
+	}
+}
+
+
+/** B-P 1045px **/
+
+@media (max-width: 1045px)
+{
+
+	/** POPULAIRES **/
+	
+	#stat{
+		float: initial;
+	}
+
+	#populaire .popu__para2{
+	    top: 92px;
+	}
+
+
+}
 
 /** FORMAT TABLETTE **/
 
-@media (max-width: 768px)
+@media (max-width: 991px)
 {
     
 
@@ -481,8 +509,8 @@ footer .wrapper{
 		padding: 0;
 	}
 
-	.wrapper{
-		width: 100%;
+	#stat{
+		float: right;
 	}
 
 
@@ -494,7 +522,7 @@ footer .wrapper{
 	}
 
 	#entete img{
-		width: 150px;
+		width: 30%;
 	}
 
 	#barre_nav{
@@ -516,8 +544,16 @@ footer .wrapper{
 	    margin-right: auto;
 	}
 
-	#filter{
-		flex-direction: column;
+	#btn_search{
+		display: none;
+	}
+
+	#btnphone_search{
+	    width: 18px;
+	    display: inline;
+	    background-color: #0065FC;
+	    padding: 16px;
+	    border-radius: 15px;
 	}
 
 	#filter h5{
@@ -526,7 +562,8 @@ footer .wrapper{
 	}
 
 	#filter ul{
-		margin-left: 160px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	#information i{
@@ -589,11 +626,11 @@ footer .wrapper{
 	}
 
 	#populaire img{
-		width: 50%;
+		width: 45%;
 	}
 
 	#populaire h5, #populaire p, #populaire .star{
-		left: 390px;
+		left: 50%;
 	}
 
 	.popu{
@@ -610,6 +647,10 @@ footer .wrapper{
 
 	#act_table{
 		flex-direction: column;
+	}
+
+	#activite article:first-child {
+    margin-right: auto;
 	}
 
 	#act_table, #act_table article {
@@ -640,7 +681,7 @@ footer .wrapper{
 
 /** FORMAT MOBILE **/
 
-@media (max-width: 375px)
+@media (max-width: 768px)
 {
 
 	h1{
@@ -665,7 +706,7 @@ footer .wrapper{
 	}
 
 	#entete img{
-		width: 100px;
+		width: 55%;
 	}
 	 
 
@@ -698,7 +739,7 @@ footer .wrapper{
 	#sub{
 	    position: relative;
 	    width: max-content;
-	    left: 265px;
+	    left: 75%;
 	    top: -130px;
 	    margin: 0;
 	}
@@ -719,7 +760,7 @@ footer .wrapper{
 	}
 
 	#ville{
-		width: 230px;
+		width: 100%;
 	}
 
 	#btn_search{
@@ -728,7 +769,7 @@ footer .wrapper{
 
 	#btnphone_search{
 	    width: 18px;
-	    display: inline;
+	    display: flex;
 	    background-color: #0065FC;
 	    padding: 16px;
 	    border-radius: 15px;
@@ -779,14 +820,6 @@ footer .wrapper{
     	border-radius: 0;
 	}
 
-	#populaire h5, #populaire p, #populaire .star{
-		left: 145px;
-	}
-
-	#populaire img {
-    	width: 127px;
-	}
-
 	#populaire h2{
 		padding: 10px 10px 10px 20px;
 	}
@@ -795,11 +828,8 @@ footer .wrapper{
 		font-size: 1em;
 	}
 
-	#populaire p{
-		left: 145px;
-	}
-
 	#stat{
+		float: right;
 		padding: 10px 20px 10px 10px;
 	}
 
@@ -807,6 +837,10 @@ footer .wrapper{
 	    width: 90%;
 	    margin-left: auto;
 	    margin-right: auto;
+	}
+
+	#populaire .popu__para2{
+		top: 60px;
 	}
 
 	#result_search{
@@ -827,7 +861,7 @@ footer .wrapper{
 	    width: auto;
 	    margin-left: auto;
 	    margin-right: auto;
-	    display: inline-block;
+	    float: initial;
 	}
 
 	#first_line .add, #sec_line .add{
@@ -860,12 +894,16 @@ footer .wrapper{
 	}
 
 	#act1, #act2, #act3, #act4, #act5, #act6{
-		margin-left: 0;
-		margin-right: 0;
+		margin-left: auto;
+		margin-right: auto;
 		margin-top: 0;
 		margin-bottom: 20px;
 	}
 
+	.second_act, .second_act2 {
+		margin-right: auto;
+		margin-left: auto;
+	}
 
 	/** PIED DE PAGE **/
 
@@ -880,5 +918,13 @@ footer .wrapper{
 	#propos, #nos_heberg, #assist{
 		margin: 20px 0 20px 20px;
 	}
+}
 
+
+/** Petit Smartphone **/
+
+@media (max-width: 400px){
+	#recherche form {
+		width: 90%
+	}
 }
