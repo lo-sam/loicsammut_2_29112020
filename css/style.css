@@ -369,7 +369,7 @@ header p{
 }
 
 #activite article:first-child{
-	margin-right: 30px;
+	margin-right: 3%;
 }
 
 #activite img{
@@ -384,11 +384,15 @@ header p{
 	box-shadow: 5px 5px 20px #F2F2F2;	
 }
 
-#act1 ,#act4{
-	height: 450px;
-	width: 90%
+.first_act{
+	width: 90%;
+	margin-right: 6%;
 }
 
+#act1, #act4{
+		height: 450px;
+
+}
 #act1 img, #act4 img{
 	height: 390px;
 }
@@ -398,11 +402,11 @@ header p{
 	width: 90%;
 	display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 #act2{
 	height: 240px;
+	margin-bottom: 13%;
 }
 
 #act2 img{
@@ -419,6 +423,7 @@ header p{
 
 #act5{
 	height: 195px;
+	margin-bottom: 14%;
 }
 
 #act5 img{
@@ -434,8 +439,8 @@ height: 140px;
 }
 
 #activite h5{
-	padding-top: 20px;
 	padding-left: 20px;
+	padding-top: 20px;
 }
 
 
@@ -448,6 +453,7 @@ footer{
 }
 
 footer .wrapper {
+	max-width: 1340px;
     display: flex;
     justify-content: space-around;
     margin-left: 0;
@@ -455,6 +461,7 @@ footer .wrapper {
 
 #propos , #nos_heberg , #assist{
 	margin-top: 50px;
+	margin-right: 15%;
 }
 
 #propos h3, #nos_heberg h3, #assist h3{
@@ -476,6 +483,18 @@ footer .wrapper {
 	#populaire .popu__para2{
 		top: 75px;
 	}
+
+
+	/** ACTIVITES **/
+
+	#act4 h5{
+		padding-top: 3%;
+	}
+
+	#act5 h5{
+		padding-top: 6%;
+	}
+
 }
 
 
@@ -485,7 +504,7 @@ footer .wrapper {
 {
 
 	/** POPULAIRES **/
-	
+
 	#stat{
 		float: initial;
 	}
@@ -561,11 +580,6 @@ footer .wrapper {
 		padding-left: 0;
 	}
 
-	#filter ul{
-		margin-left: auto;
-		margin-right: auto;
-	}
-
 	#information i{
 		margin-left: 20px;
 	    margin-right: 5px;
@@ -633,6 +647,10 @@ footer .wrapper {
 		left: 50%;
 	}
 
+	#populaire .popu__para2 {
+	    top: 60px;
+	}
+
 	.popu{
 	    margin-left: auto;
 	    margin-right: auto;
@@ -651,6 +669,7 @@ footer .wrapper {
 
 	#activite article:first-child {
     margin-right: auto;
+    margin-bottom: 20px;
 	}
 
 	#act_table, #act_table article {
@@ -658,6 +677,11 @@ footer .wrapper {
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	#act2, #act5 {
+	    margin-bottom: 40px;
+	}
+
 
 	/** FOOTER **/
 
@@ -883,6 +907,10 @@ footer .wrapper {
 
 	}
 
+	.first_act, .second_act{
+		margin: 0 auto;
+	}
+
 	#act_table, #act_table article {
 	    flex-direction: column;
     	margin-left: auto;
@@ -891,12 +919,13 @@ footer .wrapper {
 
 	#act_table article{
 		margin-top: 0;
+		width: 100%;
 	}
 
 	#act1, #act2, #act3, #act4, #act5, #act6{
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 0;
+		margin-top: 10px;
 		margin-bottom: 20px;
 	}
 
