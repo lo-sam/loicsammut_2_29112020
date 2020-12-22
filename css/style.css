@@ -456,7 +456,6 @@ footer .wrapper {
 	max-width: 1340px;
     display: flex;
     justify-content: space-around;
-    margin-left: auto;
 }
 
 #propos , #nos_heberg , #assist{
@@ -898,7 +897,6 @@ footer .wrapper {
 	/** ACTIVITES **/
 
 	#activite{
-		/*padding: 45px 40px 34px 35px;*/
 		margin-top: 0;
 	}
 
@@ -907,6 +905,9 @@ footer .wrapper {
 
 	}
 
+	#activite img{
+		height: 135px;
+	}
 	.first_act, .second_act{
 		margin: 0 auto;
 	}
@@ -917,9 +918,18 @@ footer .wrapper {
     	margin-right: auto;
 	}
 
+	#activite h5{
+		padding-bottom: 20px;
+	}
+	
+	#act4 h5{
+		padding-top: 20px;
+	}
+
 	#act_table article{
 		margin-top: 0;
 		width: 100%;
+		height: auto;
 	}
 
 	#act1, #act2, #act3, #act4, #act5, #act6{
@@ -927,6 +937,7 @@ footer .wrapper {
 		margin-right: auto;
 		margin-top: 10px;
 		margin-bottom: 20px;
+		height: auto;
 	}
 
 	.second_act, .second_act2 {
