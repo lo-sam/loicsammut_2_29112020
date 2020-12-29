@@ -623,6 +623,7 @@ footer .wrapper {
 
 	#result_search img{
 		width: 100%;
+		height: 220px;
 	}
 
 	#more{
@@ -640,6 +641,7 @@ footer .wrapper {
 
 	#populaire img{
 		width: 45%;
+		height: 200px;
 	}
 
 	#populaire h5, #populaire p, #populaire .star{
@@ -657,9 +659,36 @@ footer .wrapper {
 
 
 	/** ACTIVITES **/
+	#activite{
+		margin-top: 0;
+	}
 
 	#activite h2{
-		padding-left: 20px;
+		margin-bottom: 25px;
+		margin-top: 15px;
+		margin-left: 6%;
+	}
+
+	#activite h5{
+		padding-bottom: 20px;
+	}
+	
+	#act4 h5{
+		padding-top: 20px;
+	}
+
+	#act1, #act2, #act3, #act4, #act5, #act6{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		height: auto;
+	}
+
+	.second_act, .second_act2 {
+		margin-right: auto;
+		margin-left: auto;
+		height: auto;
 	}
 
 	#act_table{
@@ -668,19 +697,29 @@ footer .wrapper {
 
 	#activite article:first-child {
     margin-right: auto;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
+	}
+
+	#act_table article {
+		margin-top: 0;
+		width: 100%;
+		height: auto;
+	}
+
+	.first_act, .second_act{
+		margin: 0 auto;
 	}
 
 	#act_table, #act_table article {
-		margin-top: 15px;
+		flex-direction: column;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	#act2, #act5 {
-	    margin-bottom: 40px;
-	}
 
+	#activite img{
+		height: 220px;
+	}
 
 	/** FOOTER **/
 
@@ -851,6 +890,10 @@ footer .wrapper {
 		font-size: 1em;
 	}
 
+	#populaire img{
+		height: 200px;
+	}
+
 	#stat{
 		float: right;
 		padding: 10px 20px 10px 10px;
@@ -876,6 +919,7 @@ footer .wrapper {
 
 	#result_search img{
 		width: 97%;
+		height: 220px;
 		padding: 5px;
 	}
 
@@ -906,16 +950,7 @@ footer .wrapper {
 	}
 
 	#activite img{
-		height: 135px;
-	}
-	.first_act, .second_act{
-		margin: 0 auto;
-	}
-
-	#act_table, #act_table article {
-	    flex-direction: column;
-    	margin-left: auto;
-    	margin-right: auto;
+		height: 220px;
 	}
 
 	#activite h5{
@@ -924,12 +959,6 @@ footer .wrapper {
 	
 	#act4 h5{
 		padding-top: 20px;
-	}
-
-	#act_table article{
-		margin-top: 0;
-		width: 100%;
-		height: auto;
 	}
 
 	#act1, #act2, #act3, #act4, #act5, #act6{
@@ -967,4 +996,17 @@ footer .wrapper {
 	#recherche form {
 		width: 90%
 	}
+
+	#populaire img{
+		height: 134px;
+	}
+
+	#result_search img{
+		height: 114px;
+	}
+
+	#activite img{
+		height: 135px;
+	}
+
 }
