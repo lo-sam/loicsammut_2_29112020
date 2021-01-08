@@ -34,11 +34,11 @@ h3{
 	font-size: 1.3em;
 }
 
-h5{
+h4{
 	font-size: 1.2em;
 }
 
-h1, h2, h3, h5{
+h1, h2, h3, h4{
 	font-weight: bold;
 }
 
@@ -111,7 +111,7 @@ header p{
 	margin-bottom: 30px;
 }
 
-#recherche form label,h5{
+#recherche form label,h4{
 	margin-bottom: auto;
     margin-top: auto;
 }
@@ -288,7 +288,7 @@ header p{
 	padding: 5px;
 }
 
-.add h5, .add p{
+.add h4, .add p{
 	padding-left: 15px;
 	padding-bottom: 10px;
 }
@@ -335,12 +335,12 @@ header p{
 	border-radius: 10px 0 0 10px;
 }
 
-#populaire p, #populaire h5, #populaire .star{
+#populaire p, #populaire h4, #populaire .star{
 	position: absolute;
 	left: 40%;
 }
 
-#populaire h5{
+#populaire h4{
 	top: 10%;
 	padding-right: 5px;
 	text-align: start;
@@ -446,7 +446,7 @@ height: 140px;
 	height: 150px;
 }
 
-#activite h5{
+#activite h4{
 	padding-left: 20px;
 	padding-top: 20px;
 }
@@ -494,11 +494,11 @@ footer .wrapper {
 
 	/** ACTIVITES **/
 
-	#act4 h5{
+	#act4 h4{
 		padding-top: 3%;
 	}
 
-	#act5 h5{
+	#act5 h4{
 		padding-top: 6%;
 	}
 
@@ -582,7 +582,7 @@ footer .wrapper {
 	    border-radius: 15px;
 	}
 
-	#filter h5{
+	#filter h4{
 		margin-left: 20px;
 		padding-left: 0;
 	}
@@ -601,7 +601,7 @@ footer .wrapper {
 		border-radius: 20px;
 	}
 
-	.add h5{
+	.add h4{
 		padding-bottom: 10px;
 	}
 
@@ -652,7 +652,7 @@ footer .wrapper {
 		height: 200px;
 	}
 
-	#populaire h5, #populaire p, #populaire .star{
+	#populaire h4, #populaire p, #populaire .star{
 		left: 50%;
 	}
 
@@ -677,11 +677,11 @@ footer .wrapper {
 		margin-left: 6%;
 	}
 
-	#activite h5{
+	#activite h4{
 		padding-bottom: 20px;
 	}
 	
-	#act4 h5{
+	#act4 h4{
 		padding-top: 20px;
 	}
 
@@ -852,7 +852,7 @@ footer .wrapper {
 		display: block;
 	}
 
-	#filter h5{
+	#filter h4{
     	margin: 0;
 	}
 
@@ -900,7 +900,7 @@ footer .wrapper {
 		padding: 10px 10px 10px 20px;
 	}
 
-	#populaire h5{
+	#populaire h4{
 		font-size: 1em;
 	}
 
@@ -967,11 +967,11 @@ footer .wrapper {
 		height: 220px;
 	}
 
-	#activite h5{
+	#activite h4{
 		padding-bottom: 20px;
 	}
 	
-	#act4 h5{
+	#act4 h4{
 		padding-top: 20px;
 	}
 
